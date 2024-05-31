@@ -7,3 +7,39 @@
 body{
     font-family: Lato;
 }
+
+/* HEADER */
+
+div.d-flex{
+    display: flex;
+}
+
+section.nav-verticale{
+    width: 35vw;
+    height: 8vh;
+    background-color: rgb(226, 222, 222);
+}
+
+section.section-messaggi{
+    width: 65vw;
+    height: 8vh;
+    background-color: rgb(226, 222, 222);
+}
+
+/* MAIN */
+
+div.flex{
+    display: flex;
+}
+
+nav.verticale{
+    width: 35vw;
+    height: 92vh;
+    background-color: white;
+}
+
+section.testo-messaggi{
+    width: 65vw;
+    height: 92vh;
+    background-image: url(img/mine.jpg);
+}
