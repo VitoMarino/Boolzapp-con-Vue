@@ -9,27 +9,62 @@ body{
 }
 
 /* HEADER */
-
-div.d-flex{
+div.d-flex-header{
     display: flex;
 }
 
-section.nav-verticale{
+section.nav-verticale-header{
     width: 35vw;
     height: 8vh;
-    background-color: rgb(226, 222, 222);
+    background-color: #e9e9eb;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem;
 }
 
-section.section-messaggi{
+section.nav-verticale-header > i{
+    margin: .3rem;
+}
+
+section.section-messaggi-header{
     width: 65vw;
     height: 8vh;
-    background-color: rgb(226, 222, 222);
+    background-color: #e9e9eb;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem;
+}
+
+section.section-messaggi-header > i {
+    margin: .3rem;
 }
 
 /* MAIN */
-
-div.flex{
+div.d-flex-main{
     display: flex;
+}
+
+div.background-color-alert{
+    display: flex;
+    background-color: #8edafc;
+    align-items: center;
+    padding: .5rem;
+}
+
+div.background-color-alert > i{
+    margin-right: .3rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding: .6rem .5rem .6rem .5rem;
+}
+
+section.alert{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 3.5rem;
 }
 
 div.input-search{
@@ -37,17 +72,16 @@ div.input-search{
     justify-content: center;
 }
 
-nav.verticale{
+nav.nav-verticale-main{
     width: 35vw;
     height: 92vh;
-    background-color: rgba(255, 255, 255, 0.817);
 }
 
 nav > ul > li {
     display: flex;
 }
 
-section.testo-messaggi{
+section.section-messaggi-main{
     width: 65vw;
     height: 92vh;
     background-image: url(img/mine.jpg);
@@ -59,8 +93,25 @@ section.testo-messaggi{
 
 input#search{
     width: 30vw;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border-style: none;
 }
 
 input#input-message{
-    width: 50vw;
+    width: 40rem;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border-style: none;
+}
+
+div.prova{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3eeea;
+    height: 4rem;
+    width: 65vw;
 }

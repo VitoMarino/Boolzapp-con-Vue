@@ -12,25 +12,46 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>BOOLZAPP</title>
 </head>
+
 <body>
+    <!--DIV APP PER VUE-->
     <div id="app">
+
+        <!--HEADER-->
         <header>
-            <div class="d-flex">
-                <section class="nav-verticale">
-
-                </section>
-                
-                <section class="section-messaggi">
-
-                </section>
-            </div>
+                <div class="d-flex-header">
+                    <section class="nav-verticale-header">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </section>
+                    
+                    <section class="section-messaggi-header">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </section>
+                </div>
         </header>
 
+        <!--MAIN-->
         <main>
-            <div class="flex">
-                <nav class="verticale">
+            <div class="d-flex-main">
+
+                <!--INIZIO NAVBAR VERTICALE-->
+                <nav class="nav-verticale-main">
+                    <div class="background-color-alert">
+                        <i class="fa-solid fa-bell-slash"></i>
+                        <section class="alert">
+                            <p>
+                                Ricevi notifiche di nuovi messaggi
+                            </p>
+                            <a href="">Attiva notifiche desktop</a>
+                        </section>
+                    </div>
                     <div class="input-search">
-                        <input type="search" name="search" id="search">
+                            <input type="search" name="search" id="search" placeholder="🔍 Cerca o inizia una nuova chat">
+                        </i>
                     </div>
                     <ul>
                         <li v-for="(item, index) in contacts">
@@ -41,15 +62,25 @@
                         </li>
                     </ul>
                 </nav>
-                <section class="testo-messaggi">
-                    <div>
-                        <input id="input-message" type="text">
+
+                <!--PARTE DEDICATA INVIO MESSAGGI-->
+                <section class="section-messaggi-main">
+                    <p v-for="(item, index) in contacts">
+                        {{item.messages.message}}
+                    </p>
+                    <div class="prova">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <section>
+                            <input id="input-message" type="text" placeholder="Scrivi un messaggio">
+                        </section>
+                        <i class="fa-solid fa-microphone"></i>
                     </div>
                 </section>
             </div>
         </main>
     </div>
 
+    <!--SCRIPT JS-->
     <script src="script.js"></script>
 </body>
 </html>
