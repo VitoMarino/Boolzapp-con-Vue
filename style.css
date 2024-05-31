@@ -120,3 +120,14 @@ div.prova{
     height: 4rem;
     width: 65vw;
 }
+
+li.li-avatar{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+img.img-avatar{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

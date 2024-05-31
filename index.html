@@ -51,14 +51,11 @@
                     </div>
                     <div class="input-search">
                             <input type="search" name="search" id="search" placeholder="🔍 Cerca o inizia una nuova chat">
-                        </i>
                     </div>
                     <ul>
-                        <li v-for="(item, index) in contacts">
+                        <li class="li-avatar" v-for="(item, index) in contacts">
+                            <img class="img-avatar" :src="item.avatar" alt="avatar">
                             {{item.name}}
-                        </li>
-                        <li>
-                            <img class="img-avatar" v-for="(item, index) in contacts" :src="item.avatar" alt="avatar">
                         </li>
                     </ul>
                 </nav>
