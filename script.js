@@ -168,5 +168,16 @@ createApp({
                 }
             ]
             }
+        },
+        methods: {
+            funzioneClick : function () {
+                this.activeContactIndex = this.contacts.messages[0].message;
+            },
+
+            autoComplete : function (input) {
+                console.log(input.target.value)
+                const nameSearch = contacts.name;
+                
+            }
         }
     }).mount('#app')
