@@ -32,14 +32,35 @@ div.flex{
     display: flex;
 }
 
+div.input-search{
+    display: flex;
+    justify-content: center;
+}
+
 nav.verticale{
     width: 35vw;
     height: 92vh;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.817);
+}
+
+nav > ul > li {
+    display: flex;
 }
 
 section.testo-messaggi{
     width: 65vw;
     height: 92vh;
     background-image: url(img/mine.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+input#search{
+    width: 30vw;
+}
+
+input#input-message{
+    width: 50vw;
 }

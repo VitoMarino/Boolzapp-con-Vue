@@ -29,14 +29,22 @@
         <main>
             <div class="flex">
                 <nav class="verticale">
+                    <div class="input-search">
+                        <input type="search" name="search" id="search">
+                    </div>
                     <ul>
+                        <li v-for="(item, index) in contacts">
+                            {{item.name}}
+                        </li>
                         <li>
-                                
+                            <img :src="contacts.avatar" alt="avatar">
                         </li>
                     </ul>
                 </nav>
                 <section class="testo-messaggi">
-
+                    <div>
+                        <input id="input-message" type="text">
+                    </div>
                 </section>
             </div>
         </main>
