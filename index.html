@@ -58,13 +58,14 @@
                             {{item.name}}
                         </li>
                         <li>
-                            <img :src="contacts.avatar" alt="avatar">
+                            <img class="img-avatar" v-for="(item, index) in contacts" :src="item.avatar" alt="avatar">
                         </li>
                     </ul>
                 </nav>
 
                 <!--PARTE DEDICATA INVIO MESSAGGI-->
                 <section class="section-messaggi-main">
+                    {{contacts[activeContactIndex].messages[0].message}}
                     <p v-for="(item, index) in contacts">
                         {{item.messages.message}}
                     </p>

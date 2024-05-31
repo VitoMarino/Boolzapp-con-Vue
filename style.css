@@ -42,6 +42,11 @@ section.section-messaggi-header > i {
 }
 
 /* MAIN */
+img.img-avatar{
+    width: 50px;
+    border-radius: 2rem;
+}
+
 div.d-flex-main{
     display: flex;
 }
