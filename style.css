@@ -132,15 +132,16 @@ section.section-messaggi-main{
     justify-content: space-between;
 }
 
-div.message-sent{
+p.message-sent{
     background-color: #d5f9bb;
     width: 17rem;
     padding: 1rem;
     border-radius: .5rem;
     margin: .8rem;
+    margin-left: 30.5rem;
 }
 
-div.message-received{
+p.message-received{
     background-color: white;
     width: 17rem;
     padding: 1rem;

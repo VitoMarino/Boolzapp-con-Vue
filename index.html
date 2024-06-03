@@ -64,16 +64,12 @@
                 <section class="section-messaggi-main">
 
                     <section>
-                        <div class="message-sent">
-                            <p>
-                                ciao
-                            </p>
-                        </div>
+                        <div>
+                            <template v-for="(item, index) in contacts[activeContactIndex].messages">
+                                <p class="message-sent" v-if="item.status === 'sent' ">{{item.message}}</p>
+                                <p class="message-received" v-if="item.status === 'received' ">{{item.message}}</p>
+                            </template>
                         
-                        <div class="message-received">
-                            <p>
-                                ciao
-                            </p>
                         </div>
                     </section>
                     

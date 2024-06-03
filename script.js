@@ -191,6 +191,10 @@ createApp({
                 this.activeContactIndex = oggettoIndex;
             },
 
+            aggiuntaMessaggio : function () {
+
+            },
+
             autoComplete : function (input) {
                 console.log(input.target.value)
                 const nameSearch = contacts.name;
