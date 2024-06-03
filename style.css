@@ -86,16 +86,6 @@ nav > ul > li {
     display: flex;
 }
 
-section.section-messaggi-main{
-    width: 65vw;
-    height: 92vh;
-    background-image: url(img/mine.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-}
-
 input#search{
     width: 30vw;
     margin: .5rem;
@@ -112,7 +102,8 @@ input#input-message{
     border-style: none;
 }
 
-div.prova{
+/*Gestisce elementi dentro l'input*/
+section.prova{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,4 +121,29 @@ li.li-avatar{
 img.img-avatar{
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+section.section-messaggi-main{
+    width: 65vw;
+    height: 92vh;
+    background-image: url(img/mine.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.message-sent{
+    background-color: #d5f9bb;
+    width: 17rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: .8rem;
+}
+
+div.message-received{
+    background-color: white;
+    width: 17rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: .8rem;
 }

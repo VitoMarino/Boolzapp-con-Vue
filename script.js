@@ -187,14 +187,13 @@ createApp({
             }
         },
         methods: {
-            funzioneClick : function () {
-                this.activeContactIndex = this.activeContactIndex + 1;
+            funzioneClick : function (oggettoIndex) {
+                this.activeContactIndex = oggettoIndex;
             },
 
             autoComplete : function (input) {
                 console.log(input.target.value)
                 const nameSearch = contacts.name;
-                
             }
         }
     }).mount('#app')

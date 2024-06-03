@@ -53,7 +53,7 @@
                         <input type="search" name="search" id="search" placeholder="🔍 Cerca o inizia una nuova chat" @keyup="autoComplete">
                     </div>
                     <ul>
-                        <li class="li-avatar" v-for="(item, index) in contacts" @click='funzioneClick'>
+                        <li class="li-avatar" v-for="(item, index) in contacts" @click='funzioneClick(index)'>
                             <img class="img-avatar" :src="item.avatar" alt="avatar">
                             {{item.name}}
                         </li>
@@ -62,27 +62,30 @@
 
                 <!--PARTE DEDICATA INVIO MESSAGGI-->
                 <section class="section-messaggi-main">
-                    
-                    <div class="message-sent">
-                        <p>
-                            {{contacts[activeContactIndex].messages[activeMessageIndex].message}}
-                        </p>
-                    </div>
-                    
-                    <div class="message-received">
-                        <p>
 
-                        </p>
-                    </div>
-
-                    <div class="prova">
+                    <section>
+                        <div class="message-sent">
+                            <p>
+                                ciao
+                            </p>
+                        </div>
+                        
+                        <div class="message-received">
+                            <p>
+                                ciao
+                            </p>
+                        </div>
+                    </section>
+                    
+                    <section class="prova">
                         <i class="fa-regular fa-face-smile"></i>
-                        <section>
-                            <input id="input-message" type="text" placeholder="Scrivi un messaggio">
-                        </section>
+                        <input id="input-message" type="text" placeholder="Scrivi un messaggio">
                         <i class="fa-solid fa-microphone"></i>
-                    </div>
+                    </section>
+
                 </section>
+
+                
             </div>
         </main>
     </div>
