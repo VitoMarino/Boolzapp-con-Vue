@@ -4,7 +4,6 @@ createApp({
     data() {
         return {
             activeContactIndex : 0,
-            activeMessageIndex : 0,
             contacts: [
                 {
                     name: 'Michele',
@@ -192,7 +191,15 @@ createApp({
             },
 
             aggiuntaMessaggio : function () {
-
+                messages : [
+                    {
+                    message: '',
+                    status: 'sent'
+                    },
+                    {
+                        message: 'Ok',
+                        status: 'received'
+                    }]
             },
 
             autoComplete : function (input) {
