@@ -62,9 +62,19 @@
 
                 <!--PARTE DEDICATA INVIO MESSAGGI-->
                 <section class="section-messaggi-main">
-                    <p>
-                        {{contacts[activeContactIndex].messages[0].message}}
-                    </p>
+                    
+                    <div class="message-sent">
+                        <p>
+                            {{contacts[activeContactIndex].messages[activeMessageIndex].message}}
+                        </p>
+                    </div>
+                    
+                    <div class="message-received">
+                        <p>
+
+                        </p>
+                    </div>
+
                     <div class="prova">
                         <i class="fa-regular fa-face-smile"></i>
                         <section>
