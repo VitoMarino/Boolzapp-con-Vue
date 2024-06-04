@@ -218,11 +218,15 @@ createApp({
             searchContact: function (ricerca, index) {
                 ricerca = this.search;
                 index = this.activeContactIndex;
-                if (index === this.contacts[index].name) {
-                    
-                } else {
-                    console.log('La ricerca non ha prodotto alcun risultato')
-                }
-            }
-        }
+                let nomi = this.contacts[index].name;
+
+                let nome = nomi.filter((name) => {
+                    if (index === this.contacts[index].name) {
+                        
+                    } else {
+                        console.log('La ricerca non ha prodotto alcun risultato')
+                    }
+                });
+            },
+        },
     }).mount('#app')
