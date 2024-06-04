@@ -191,21 +191,24 @@ createApp({
             },
 
             aggiuntaMessaggio : function (index) {
+                this.activeContactIndex = index;
+
                 let messageSent = {
                     date: '10/01/2020 15:30:55',
                     message: '',
                     status: 'sent'
                 };
 
-                let messageReceived = {
-                    date: '10/01/2020 15:31:56',
-                    message: 'Ok',
-                    status: 'received'
-                };
-
-                this.activeContactIndex = index;
                 this.contacts[index].messages.push(messageSent);
-                this.contacts[index].messages.push(messageReceived);
+
+                setTimeout(function() {
+                    let messageReceived = {
+                        date: '10/01/2020 15:31:56',
+                        message: 'Ok',
+                        status: 'received'
+                    }
+                    this.contacts[index].messages.push(messageReceived);
+                }, 1000);
             },
 
             autoComplete : function (input) {
