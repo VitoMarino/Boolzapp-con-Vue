@@ -190,23 +190,27 @@ createApp({
                 this.activeContactIndex = oggettoIndex;
             },
 
-            aggiuntaMessaggio : function () {
-                this.contacts[0].messages.push(message);
-
-                message = [
-                    {
+            aggiuntaMessaggio : function (index) {
+                let messageSent = {
+                    date: '10/01/2020 15:30:55',
                     message: '',
                     status: 'sent'
-                    },
-                    {
-                        message: 'Ok',
-                        status: 'received'
-                    }]
+                };
+
+                let messageReceived = {
+                    date: '10/01/2020 15:31:56',
+                    message: 'Ok',
+                    status: 'received'
+                };
+
+                this.activeContactIndex = index;
+                this.contacts[index].messages.push(messageSent);
+                this.contacts[index].messages.push(messageReceived);
             },
 
             autoComplete : function (input) {
                 console.log(input.target.value)
-                const nameSearch = contacts.name;
+                const nameSearch = this.contacts.name;
             }
         }
     }).mount('#app')
