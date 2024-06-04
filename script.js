@@ -5,6 +5,7 @@ createApp({
         return {
             activeContactIndex : 0,
             textMessage : '',
+            search: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -214,9 +215,14 @@ createApp({
                 }, 1000)
             },
 
-            autoComplete : function (input) {
-                console.log(input.target.value)
-                const nameSearch = this.contacts.name;
+            searchContact: function (ricerca, index) {
+                ricerca = this.search;
+                index = this.activeContactIndex;
+                if (index === this.contacts[index].name) {
+                    
+                } else {
+                    console.log('La ricerca non ha prodotto alcun risultato')
+                }
             }
         }
     }).mount('#app')

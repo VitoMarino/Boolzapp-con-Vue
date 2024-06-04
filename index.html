@@ -50,7 +50,7 @@
                         </section>
                     </div>
                     <div class="input-search">
-                        <input type="search" name="search" id="search" placeholder="🔍 Cerca o inizia una nuova chat" @keyup="autoComplete">
+                        <input type="search" name="search" id="search" placeholder="🔍 Cerca o inizia una nuova chat" @keyup="searchContact" v-model="search">
                     </div>
                     <ul>
                         <li class="li-avatar" v-for="(item, index) in contacts" @click='funzioneClick(index)'>
