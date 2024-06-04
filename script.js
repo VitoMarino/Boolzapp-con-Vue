@@ -4,6 +4,7 @@ createApp({
     data() {
         return {
             activeContactIndex : 0,
+            textMessage : '',
             contacts: [
                 {
                     name: 'Michele',
@@ -195,13 +196,13 @@ createApp({
 
                 let messageSent = {
                     date: '10/01/2020 15:30:55',
-                    message: '',
+                    message: this.textMessage,
                     status: 'sent'
                 };
 
                 this.contacts[index].messages.push(messageSent);
 
-                setTimeout(function() {
+                setTimeout (() => {
                     
                     let messageReceived = {
                             date: '10/01/2020 15:31:56',
