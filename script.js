@@ -218,13 +218,13 @@ createApp({
             searchContact: function (ricerca, index) {
                 ricerca = this.search;
                 index = this.activeContactIndex;
-                
+
                 let nomi = [this.contacts[index].name];
                 let nome = nomi.filter((name) => {
-                    if (index === this.contacts[index].name) {
-                        
+                    if (name.includes(ricerca)) {
+                        return true
                     } else {
-                        console.log('La ricerca non ha prodotto alcun risultato')
+                        return false
                     }
                 });
             },
