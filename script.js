@@ -218,8 +218,8 @@ createApp({
             searchContact: function (ricerca, index) {
                 ricerca = this.search;
                 index = this.activeContactIndex;
-                let nomi = this.contacts[index].name;
-
+                
+                let nomi = [this.contacts[index].name];
                 let nome = nomi.filter((name) => {
                     if (index === this.contacts[index].name) {
                         
