@@ -191,7 +191,9 @@ createApp({
             },
 
             aggiuntaMessaggio : function () {
-                messages : [
+                this.contacts[0].messages.push(message);
+
+                message = [
                     {
                     message: '',
                     status: 'sent'
