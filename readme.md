@@ -1,3 +1,6 @@
+NOTA Per visualizzare il risultato, copia e incolla il seguente link sul tuo browser:
+file:///Users/vitomarino/Desktop/My%20server%20MAMP/Codice%20da%20conservare/Codice%20Vito/FRONT-END/vue-boolzapp/index.html
+
 Milestone 1
 Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due classi CSS diverse
 Visualizzazione dinamica della lista contatti: tramite la direttiva v-for, visualizzare nome e immagine di ogni contatto.
